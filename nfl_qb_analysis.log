@@ -1,0 +1,357 @@
+2025-02-28 02:37:29,461 - __main__ - INFO - Starting NFL QB analysis pipeline
+2025-02-28 02:37:29,462 - __main__ - INFO - Starting report generation for 2023 NFL season
+2025-02-28 02:37:29,463 - reporting.report_generator - INFO - Initialized NFL QB Report Generator with data directory: ./data
+2025-02-28 02:37:29,464 - reporting.report_generator - ERROR - Error loading analysis data: [Errno 2] No such file or directory: './data\\processed/qb_metrics_2023.csv'
+2025-02-28 02:37:29,465 - __main__ - ERROR - Error in reporting step: [Errno 2] No such file or directory: './data\\processed/qb_metrics_2023.csv'
+2025-02-28 02:37:35,908 - __main__ - INFO - Starting NFL QB analysis pipeline
+2025-02-28 02:37:35,908 - __main__ - INFO - Starting data collection for 2023 NFL season
+2025-02-28 02:37:35,909 - data_collection.data_fetcher - INFO - Initialized NFL data fetcher with data directory: ./data
+2025-02-28 02:37:35,909 - __main__ - ERROR - Error in data collection step: 'NFLDataFetcher' object has no attribute 'fetch_play_by_play_data'
+2025-02-28 02:39:11,770 - __main__ - INFO - Starting NFL QB analysis pipeline
+2025-02-28 02:39:11,771 - __main__ - INFO - Starting report generation for 2023 NFL season
+2025-02-28 02:39:11,771 - reporting.report_generator - INFO - Initialized NFL QB Report Generator with data directory: ./data
+2025-02-28 02:39:11,772 - reporting.report_generator - ERROR - Error loading analysis data: [Errno 2] No such file or directory: './data\\processed/qb_metrics_2023.csv'
+2025-02-28 02:39:11,772 - __main__ - WARNING - Could not load analysis data: [Errno 2] No such file or directory: './data\\processed/qb_metrics_2023.csv'
+2025-02-28 02:39:11,774 - __main__ - INFO - Creating sample data for testing the reporting module
+2025-02-28 02:39:11,829 - reporting.report_generator - ERROR - Error creating interactive plots: 'qb_composite_score'
+2025-02-28 02:39:11,830 - reporting.report_generator - ERROR - Error generating HTML report: 'qb_composite_score'
+2025-02-28 02:39:11,830 - __main__ - ERROR - Error in reporting step: 'qb_composite_score'
+2025-02-28 02:39:41,904 - __main__ - INFO - Starting NFL QB analysis pipeline
+2025-02-28 02:39:41,905 - __main__ - INFO - Starting report generation for 2023 NFL season
+2025-02-28 02:39:41,906 - reporting.report_generator - INFO - Initialized NFL QB Report Generator with data directory: ./data
+2025-02-28 02:39:41,907 - reporting.report_generator - ERROR - Error loading analysis data: [Errno 2] No such file or directory: './data\\processed/qb_metrics_2023.csv'
+2025-02-28 02:39:41,907 - __main__ - WARNING - Could not load analysis data: [Errno 2] No such file or directory: './data\\processed/qb_metrics_2023.csv'
+2025-02-28 02:39:41,908 - __main__ - INFO - Creating sample data for testing the reporting module
+2025-02-28 02:39:42,378 - reporting.report_generator - ERROR - Error creating interactive plots: Value of 'size' is not the name of a column in 'data_frame'. Expected one of ['player_name', 'team', 'qb_composite_score', 'depth_adjusted_accuracy', 'pressure_performance', 'mobility_contribution', 'passer_rating', 'completion_percentage', 'yards_per_attempt', 'td_int_ratio'] but received: passing_yards
+2025-02-28 02:39:42,378 - reporting.report_generator - ERROR - Error generating HTML report: Value of 'size' is not the name of a column in 'data_frame'. Expected one of ['player_name', 'team', 'qb_composite_score', 'depth_adjusted_accuracy', 'pressure_performance', 'mobility_contribution', 'passer_rating', 'completion_percentage', 'yards_per_attempt', 'td_int_ratio'] but received: passing_yards
+2025-02-28 02:39:42,378 - __main__ - ERROR - Error in reporting step: Value of 'size' is not the name of a column in 'data_frame'. Expected one of ['player_name', 'team', 'qb_composite_score', 'depth_adjusted_accuracy', 'pressure_performance', 'mobility_contribution', 'passer_rating', 'completion_percentage', 'yards_per_attempt', 'td_int_ratio'] but received: passing_yards
+2025-02-28 02:40:19,463 - __main__ - INFO - Starting NFL QB analysis pipeline
+2025-02-28 02:40:19,463 - __main__ - INFO - Starting report generation for 2023 NFL season
+2025-02-28 02:40:19,464 - reporting.report_generator - INFO - Initialized NFL QB Report Generator with data directory: ./data
+2025-02-28 02:40:19,466 - reporting.report_generator - ERROR - Error loading analysis data: [Errno 2] No such file or directory: './data\\processed/qb_metrics_2023.csv'
+2025-02-28 02:40:19,467 - __main__ - WARNING - Could not load analysis data: [Errno 2] No such file or directory: './data\\processed/qb_metrics_2023.csv'
+2025-02-28 02:40:19,467 - __main__ - INFO - Creating sample data for testing the reporting module
+2025-02-28 02:40:20,191 - reporting.report_generator - ERROR - Error creating interactive plots: Value of 'x' is not the name of a column in 'data_frame'. Expected one of ['player_name', 'team', 'qb_composite_score', 'depth_adjusted_accuracy', 'pressure_performance', 'mobility_contribution', 'passer_rating', 'completion_percentage', 'yards_per_attempt', 'td_int_ratio', 'passing_yards', 'passing_touchdowns', 'interceptions'] but received: team_wins
+2025-02-28 02:40:20,191 - reporting.report_generator - ERROR - Error generating HTML report: Value of 'x' is not the name of a column in 'data_frame'. Expected one of ['player_name', 'team', 'qb_composite_score', 'depth_adjusted_accuracy', 'pressure_performance', 'mobility_contribution', 'passer_rating', 'completion_percentage', 'yards_per_attempt', 'td_int_ratio', 'passing_yards', 'passing_touchdowns', 'interceptions'] but received: team_wins
+2025-02-28 02:40:20,192 - __main__ - ERROR - Error in reporting step: Value of 'x' is not the name of a column in 'data_frame'. Expected one of ['player_name', 'team', 'qb_composite_score', 'depth_adjusted_accuracy', 'pressure_performance', 'mobility_contribution', 'passer_rating', 'completion_percentage', 'yards_per_attempt', 'td_int_ratio', 'passing_yards', 'passing_touchdowns', 'interceptions'] but received: team_wins
+2025-02-28 03:08:37,667 - __main__ - INFO - Starting NFL QB analysis pipeline for 2023 season
+2025-02-28 03:08:37,667 - __main__ - INFO - Starting reporting step
+2025-02-28 03:08:37,667 - __main__ - INFO - Generating PDF report
+2025-02-28 03:08:37,668 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:08:37,668 - reporting.pdf_report - INFO - Initialized PDF report generator
+2025-02-28 03:08:37,668 - reporting.pdf_report - ERROR - No analysis results found for season 2023
+2025-02-28 03:08:37,668 - __main__ - INFO - PDF report generated at 
+2025-02-28 03:08:37,668 - __main__ - INFO - Generating executive summary
+2025-02-28 03:08:37,668 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:08:37,668 - reporting.executive_summary - INFO - Initialized executive summary generator
+2025-02-28 03:08:37,669 - reporting.executive_summary - ERROR - No analysis results found for season 2023
+2025-02-28 03:08:37,669 - __main__ - INFO - Executive summary generated at 
+2025-02-28 03:08:37,669 - __main__ - INFO - Generating interactive dashboard
+2025-02-28 03:08:37,669 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:08:37,669 - reporting.interactive_dashboard - INFO - Initialized interactive dashboard generator
+2025-02-28 03:08:37,669 - reporting.interactive_dashboard - ERROR - No analysis results found for season 2023
+2025-02-28 03:08:37,669 - __main__ - INFO - Interactive dashboard generated at 
+2025-02-28 03:08:37,670 - __main__ - INFO - Reporting step completed successfully
+2025-02-28 03:08:37,670 - __main__ - INFO - Pipeline completed successfully in 0:00:00.003005
+2025-02-28 03:09:15,316 - __main__ - INFO - Starting NFL QB analysis pipeline for 2023 season
+2025-02-28 03:09:15,317 - __main__ - INFO - Starting data collection step
+2025-02-28 03:09:15,317 - data_collection.data_fetcher - INFO - Initialized NFL data fetcher with data directory: ./data
+2025-02-28 03:09:15,318 - data_collection.data_fetcher - INFO - Fetching comprehensive QB data for season 2023
+2025-02-28 03:09:15,318 - data_collection.data_fetcher - INFO - Fetching play-by-play data for seasons: [2023]
+2025-02-28 03:09:30,749 - data_collection.data_fetcher - INFO - Successfully fetched 49665 play-by-play records
+2025-02-28 03:09:30,749 - data_collection.data_fetcher - INFO - Fetching player stats for seasons: [2023]
+2025-02-28 03:09:32,895 - data_collection.data_fetcher - INFO - Successfully fetched stats for 588 player records
+2025-02-28 03:09:32,896 - data_collection.data_fetcher - INFO - Fetching player information
+2025-02-28 03:09:35,767 - data_collection.data_fetcher - INFO - Successfully fetched info for 20754 players
+2025-02-28 03:09:35,768 - data_collection.data_fetcher - INFO - Fetching team information
+2025-02-28 03:09:37,583 - data_collection.data_fetcher - INFO - Successfully fetched info for 36 teams
+2025-02-28 03:09:37,583 - data_collection.data_fetcher - INFO - Fetching team records for seasons: [2023]
+2025-02-28 03:09:44,232 - data_collection.data_fetcher - INFO - Added team records from 1 seasons
+2025-02-28 03:09:44,233 - data_collection.data_fetcher - INFO - Fetching weekly player stats for seasons: [2023]
+2025-02-28 03:09:46,236 - data_collection.data_fetcher - INFO - Successfully fetched 5653 weekly stat records
+2025-02-28 03:09:46,236 - data_collection.data_fetcher - INFO - Fetching Next Gen Stats for seasons: [2023]
+2025-02-28 03:09:46,236 - data_collection.data_fetcher - ERROR - Error fetching Next Gen Stats: import_ngs_data() got multiple values for argument 'stat_type'
+2025-02-28 03:09:46,236 - data_collection.data_fetcher - WARNING - Couldn't fetch NGS data: import_ngs_data() got multiple values for argument 'stat_type', continuing without it
+2025-02-28 03:09:50,626 - data_collection.data_fetcher - INFO - Saved play_by_play data to ./data\season_2023\raw\play_by_play.csv
+2025-02-28 03:09:50,639 - data_collection.data_fetcher - INFO - Saved player_stats data to ./data\season_2023\raw\player_stats.csv
+2025-02-28 03:09:50,771 - data_collection.data_fetcher - INFO - Saved player_info data to ./data\season_2023\raw\player_info.csv
+2025-02-28 03:09:50,775 - data_collection.data_fetcher - INFO - Saved team_info data to ./data\season_2023\raw\team_info.csv
+2025-02-28 03:09:50,834 - data_collection.data_fetcher - INFO - Saved weekly_stats data to ./data\season_2023\raw\weekly_stats.csv
+2025-02-28 03:09:50,834 - __main__ - INFO - Data collection completed successfully
+2025-02-28 03:09:50,834 - __main__ - INFO - Starting data processing step
+2025-02-28 03:09:50,835 - data_processing.data_processor - INFO - Initialized NFL data processor with data directory: ./data
+2025-02-28 03:09:50,836 - data_processing.data_processor - INFO - Processing QB data from: 49665 play-by-play records, 588 player stat records, 20754 player info records, 36 team records
+2025-02-28 03:09:50,836 - data_processing.data_processor - INFO - Merging player stats with player info to get position data
+2025-02-28 03:09:50,836 - data_processing.data_processor - INFO - Player stats columns: ['player_id', 'season', 'season_type', 'completions', 'attempts', 'passing_yards', 'passing_tds', 'interceptions', 'sacks', 'sack_yards']...
+2025-02-28 03:09:50,836 - data_processing.data_processor - INFO - Player info columns: ['birth_date', 'college_conference', 'college_name', 'current_team_id', 'display_name', 'draft_club', 'draft_number', 'draftround', 'entry_year', 'esb_id']...
+2025-02-28 03:09:50,836 - data_processing.data_processor - INFO - Player stats sample IDs: ['00-0023459', '00-0024243', '00-0026158']
+2025-02-28 03:09:50,836 - data_processing.data_processor - INFO - Using player_id to gsis_id mapping
+2025-02-28 03:09:50,849 - data_processing.data_processor - INFO - After merge: 588 records, position nulls: 0
+2025-02-28 03:09:50,850 - data_processing.data_processor - INFO - Filtered data to 48 QBs with at least 100 passing attempts
+2025-02-28 03:09:50,953 - data_processing.data_processor - INFO - PBP columns related to pressure: ['qb_hit', 'sack', 'lateral_sack_player_id', 'lateral_sack_player_name', 'qb_hit_1_player_id', 'qb_hit_1_player_name', 'qb_hit_2_player_id', 'qb_hit_2_player_name', 'sack_player_id', 'sack_player_name', 'half_sack_1_player_id', 'half_sack_1_player_name', 'half_sack_2_player_id', 'half_sack_2_player_name', 'was_pressure']
+2025-02-28 03:09:50,954 - data_processing.data_processor - INFO - Using 'qb_hit' for pressure detection
+2025-02-28 03:09:50,954 - data_processing.data_processor - INFO - Using 'sack' for pressure detection
+2025-02-28 03:09:50,955 - data_processing.data_processor - INFO - Created 'under_pressure' field using 2 indicators
+2025-02-28 03:09:50,955 - data_processing.data_processor - INFO - Prepared 20723 pass plays for QB analysis
+2025-02-28 03:09:50,955 - data_processing.data_processor - INFO - Adding team information from player_info
+2025-02-28 03:09:50,964 - data_processing.data_processor - INFO - Added team information to 48 QB records
+2025-02-28 03:09:50,964 - data_processing.data_processor - INFO - Calculating advanced QB metrics from play-by-play data
+2025-02-28 03:09:51,470 - data_processing.data_processor - INFO - Enhanced QB stats with depth-based and pressure metrics for 48 QBs
+2025-02-28 03:09:51,474 - data_processing.data_processor - INFO - QB stats already contains a team identifier column
+2025-02-28 03:09:51,475 - data_processing.data_processor - INFO - Team mapping sample: [{'team_abbr': 'ARI', 'wins': 4.0, 'losses': 13.0, 'ties': 0.0, 'points_for': 330.0, 'points_against': 455.0}, {'team_abbr': 'ATL', 'wins': 7.0, 'losses': 10.0, 'ties': 0.0, 'points_for': 321.0, 'points_against': 373.0}, {'team_abbr': 'BAL', 'wins': 13.0, 'losses': 4.0, 'ties': 0.0, 'points_for': 483.0, 'points_against': 280.0}, {'team_abbr': 'BUF', 'wins': 11.0, 'losses': 6.0, 'ties': 0.0, 'points_for': 451.0, 'points_against': 311.0}, {'team_abbr': 'CAR', 'wins': 2.0, 'losses': 15.0, 'ties': 0.0, 'points_for': 236.0, 'points_against': 416.0}]
+2025-02-28 03:09:51,475 - data_processing.data_processor - WARNING - QB stats missing 'recent_team' column, trying to use 'team' or 'team_abbr' instead
+2025-02-28 03:09:51,475 - data_processing.data_processor - INFO - Using 'team_abbr' column instead of 'recent_team'
+2025-02-28 03:09:51,476 - data_processing.data_processor - INFO - QB teams: {'TEN': 3, 'SEA': 3, 'CLE': 3, 'LAC': 3, 'LV': 3, 'SF': 2, 'MIN': 2, 'LA': 2, 'PHI': 2, 'BUF': 2, 'CIN': 2, 'JAX': 2, 'PIT': 2, 'CHI': 1, 'NYG': 1, 'CAR': 1, 'GB': 1, 'MIA': 1, 'DEN': 1, 'IND': 1, 'ARI': 1, 'TB': 1, 'BAL': 1, 'KC': 1, 'DET': 1, 'DAL': 1, 'NO': 1, 'ATL': 1, 'NYJ': 1, 'HOU': 1}
+2025-02-28 03:09:51,478 - data_processing.data_processor - INFO - Added team context to 48 QB records
+2025-02-28 03:09:51,479 - data_processing.data_processor - INFO - Handling 0 missing values across 94 columns
+2025-02-28 03:09:51,489 - data_processing.data_processor - INFO - Reduced missing values from 0 to 0
+2025-02-28 03:09:51,492 - data_processing.data_processor - INFO - Saved processed data to ./data\season_2023\processed\qb_analysis_data.csv
+2025-02-28 03:09:53,425 - data_processing.data_processor - INFO - Saved processed data to ./data\season_2023\processed\prepared_pbp_data.csv
+2025-02-28 03:09:53,425 - data_processing.data_processor - INFO - Successfully processed QB data with 48 records
+2025-02-28 03:09:53,436 - __main__ - INFO - Data processing completed successfully
+2025-02-28 03:09:53,436 - __main__ - INFO - Starting metric development step
+2025-02-28 03:09:53,437 - metric_development.qb_metric - INFO - Initialized QB metric developer with data directory: ./data
+2025-02-28 03:09:53,441 - metric_development.qb_metric - INFO - Calculated depth-adjusted accuracy for all QBs
+2025-02-28 03:09:53,445 - metric_development.qb_metric - INFO - Calculated pressure performance metric for all QBs
+2025-02-28 03:09:53,449 - metric_development.qb_metric - INFO - Calculated mobility contribution metric for all QBs
+2025-02-28 03:09:53,450 - metric_development.qb_metric - INFO - Calculated efficiency metrics for all QBs
+2025-02-28 03:09:53,453 - metric_development.qb_metric - INFO - Normalized 6 metric components
+2025-02-28 03:09:53,454 - metric_development.qb_metric - INFO - Calculated composite QB performance metric for all QBs
+2025-02-28 03:09:53,455 - metric_development.qb_metric - INFO - Compared custom QB metric with traditional rating systems
+2025-02-28 03:09:53,455 - metric_development.qb_metric - INFO - Identified 0 overrated and 0 underrated QBs
+2025-02-28 03:09:53,460 - metric_development.qb_metric - INFO - Saved QB metric results to ./data\season_2023\metrics\qb_composite_metrics.csv
+2025-02-28 03:09:53,461 - metric_development.qb_metric - INFO - Successfully developed and calculated QB performance metric
+2025-02-28 03:09:53,461 - __main__ - INFO - Metric development completed successfully
+2025-02-28 03:09:53,461 - __main__ - INFO - Starting correlation analysis step
+2025-02-28 03:09:53,461 - analysis.correlation_analysis - INFO - Initialized QB correlation analyzer with data directory: ./data
+2025-02-28 03:09:53,461 - analysis.correlation_analysis - INFO - Created analysis directory: ./data\season_2023\analysis
+2025-02-28 03:09:53,462 - analysis.correlation_analysis - INFO - Available numeric columns: ['qb_composite_score', 'passer_rating', 'qbr', 'team_win_pct', 'wins', 'points_for']
+2025-02-28 03:09:53,463 - analysis.correlation_analysis - INFO - Column data types before conversion: {'qb_composite_score': dtype('float64'), 'passer_rating': dtype('float64'), 'qbr': dtype('float64'), 'team_win_pct': dtype('float64'), 'wins': dtype('float64'), 'points_for': dtype('float64')}
+2025-02-28 03:09:53,464 - analysis.correlation_analysis - INFO - Column data types after conversion: {'qb_composite_score': dtype('float64'), 'passer_rating': dtype('float64'), 'qbr': dtype('float64'), 'team_win_pct': dtype('float64'), 'wins': dtype('float64'), 'points_for': dtype('float64')}
+2025-02-28 03:09:53,471 - analysis.correlation_analysis - INFO - Calculated correlations between QB metrics and team success
+2025-02-28 03:09:53,846 - analysis.correlation_analysis - INFO - Created correlation heatmap and saved to ./data\season_2023\analysis\correlation_heatmap.png
+2025-02-28 03:09:54,261 - analysis.correlation_analysis - INFO - Created scatter plot and saved to ./data\season_2023\analysis\scatter_qb_composite_score_vs_team_win_pct.png
+2025-02-28 03:09:54,264 - analysis.correlation_analysis - INFO - Analyzed differences between custom metric and traditional metrics
+2025-02-28 03:09:54,273 - analysis.correlation_analysis - INFO - Generated summary report at ./data\season_2023\analysis\correlation_analysis_report.md
+2025-02-28 03:09:54,273 - analysis.correlation_analysis - INFO - Successfully completed correlation analysis
+2025-02-28 03:09:54,273 - __main__ - INFO - Correlation analysis completed successfully
+2025-02-28 03:09:54,274 - __main__ - INFO - Starting visualization step
+2025-02-28 03:09:54,274 - visualization.visualizer - INFO - Initialized QB visualizer with data directory: ./data
+2025-02-28 03:09:54,275 - visualization.visualizer - INFO - Created visualization directory: ./data\season_2023\visualizations
+2025-02-28 03:09:54,275 - visualization.visualizer - WARNING - Required columns not found for top QBs bar chart
+2025-02-28 03:09:55,101 - visualization.visualizer - INFO - Created metric correlation matrix and saved to ./data\season_2023\visualizations\metric_correlation_matrix.png
+2025-02-28 03:09:55,375 - visualization.visualizer - INFO - Created distribution plot for qb_composite_score and saved to ./data\season_2023\visualizations\qb_composite_score_distribution.png
+2025-02-28 03:09:55,586 - visualization.visualizer - INFO - Created distribution plot for passer_rating and saved to ./data\season_2023\visualizations\passer_rating_distribution.png
+2025-02-28 03:09:55,842 - visualization.visualizer - INFO - Created distribution plot for depth_adjusted_comp_pct and saved to ./data\season_2023\visualizations\depth_adjusted_comp_pct_distribution.png
+2025-02-28 03:09:56,103 - visualization.visualizer - INFO - Created distribution plot for pressure_performance and saved to ./data\season_2023\visualizations\pressure_performance_distribution.png
+2025-02-28 03:09:56,103 - visualization.visualizer - WARNING - Required columns not found for metric vs wins scatter plots
+2025-02-28 03:09:56,103 - visualization.visualizer - INFO - Created player_name column for dashboard
+2025-02-28 03:09:56,282 - visualization.visualizer - INFO - Created interactive dashboard and saved to ./data\season_2023\visualizations\qb_performance_dashboard.html
+2025-02-28 03:09:56,282 - visualization.visualizer - INFO - Successfully created all visualizations
+2025-02-28 03:09:56,282 - __main__ - INFO - Visualization completed successfully
+2025-02-28 03:09:56,283 - __main__ - INFO - Pipeline completed successfully in 0:00:40.967140
+2025-02-28 03:10:04,884 - __main__ - INFO - Starting NFL QB analysis pipeline for 2023 season
+2025-02-28 03:10:04,884 - __main__ - INFO - Starting reporting step
+2025-02-28 03:10:04,885 - __main__ - INFO - Generating PDF report
+2025-02-28 03:10:04,885 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:10:04,885 - reporting.pdf_report - INFO - Initialized PDF report generator
+2025-02-28 03:10:04,885 - reporting.pdf_report - ERROR - No analysis results found for season 2023
+2025-02-28 03:10:04,885 - __main__ - INFO - PDF report generated at 
+2025-02-28 03:10:04,885 - __main__ - INFO - Generating executive summary
+2025-02-28 03:10:04,885 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:10:04,885 - reporting.executive_summary - INFO - Initialized executive summary generator
+2025-02-28 03:10:04,886 - reporting.executive_summary - ERROR - No analysis results found for season 2023
+2025-02-28 03:10:04,886 - __main__ - INFO - Executive summary generated at 
+2025-02-28 03:10:04,886 - __main__ - INFO - Generating interactive dashboard
+2025-02-28 03:10:04,886 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:10:04,886 - reporting.interactive_dashboard - INFO - Initialized interactive dashboard generator
+2025-02-28 03:10:04,886 - reporting.interactive_dashboard - ERROR - No analysis results found for season 2023
+2025-02-28 03:10:04,886 - __main__ - INFO - Interactive dashboard generated at 
+2025-02-28 03:10:04,886 - __main__ - INFO - Reporting step completed successfully
+2025-02-28 03:10:04,886 - __main__ - INFO - Pipeline completed successfully in 0:00:00.002000
+2025-02-28 03:10:09,497 - __main__ - INFO - Starting NFL QB analysis pipeline for 2023 season
+2025-02-28 03:10:09,497 - __main__ - INFO - Starting reporting step
+2025-02-28 03:10:09,497 - __main__ - INFO - Generating PDF report
+2025-02-28 03:10:09,498 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:10:09,498 - reporting.pdf_report - INFO - Initialized PDF report generator
+2025-02-28 03:10:09,498 - reporting.pdf_report - ERROR - No analysis results found for season 2023
+2025-02-28 03:10:09,498 - __main__ - INFO - PDF report generated at 
+2025-02-28 03:10:09,498 - __main__ - INFO - Generating executive summary
+2025-02-28 03:10:09,498 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:10:09,498 - reporting.executive_summary - INFO - Initialized executive summary generator
+2025-02-28 03:10:09,499 - reporting.executive_summary - ERROR - No analysis results found for season 2023
+2025-02-28 03:10:09,499 - __main__ - INFO - Executive summary generated at 
+2025-02-28 03:10:09,499 - __main__ - INFO - Generating interactive dashboard
+2025-02-28 03:10:09,499 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:10:09,499 - reporting.interactive_dashboard - INFO - Initialized interactive dashboard generator
+2025-02-28 03:10:09,499 - reporting.interactive_dashboard - ERROR - No analysis results found for season 2023
+2025-02-28 03:10:09,499 - __main__ - INFO - Interactive dashboard generated at 
+2025-02-28 03:10:09,499 - __main__ - INFO - Reporting step completed successfully
+2025-02-28 03:10:09,500 - __main__ - INFO - Pipeline completed successfully in 0:00:00.002000
+2025-02-28 03:10:52,680 - __main__ - INFO - Starting NFL QB analysis pipeline for 2023 season
+2025-02-28 03:10:52,680 - __main__ - INFO - Starting reporting step
+2025-02-28 03:10:52,681 - __main__ - INFO - Generating PDF report
+2025-02-28 03:10:52,681 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:10:52,681 - reporting.pdf_report - INFO - Initialized PDF report generator
+2025-02-28 03:10:52,685 - reporting.report_generator - INFO - Loaded QB metrics from ./data\season_2023\metrics\qb_composite_metrics.csv
+2025-02-28 03:10:52,685 - reporting.report_generator - INFO - Loaded correlation analysis report from ./data\season_2023\analysis\correlation_analysis_report.md
+2025-02-28 03:10:52,686 - reporting.report_generator - INFO - Found correlation heatmap: ./data\season_2023\analysis\correlation_heatmap.png
+2025-02-28 03:10:52,686 - reporting.report_generator - INFO - Found scatter plot: ./data\season_2023\analysis\scatter_qb_composite_score_vs_team_win_pct.png
+2025-02-28 03:10:52,686 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\depth_adjusted_comp_pct_distribution.png
+2025-02-28 03:10:52,686 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\passer_rating_distribution.png
+2025-02-28 03:10:52,686 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\pressure_performance_distribution.png
+2025-02-28 03:10:52,687 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\qb_composite_score_distribution.png
+2025-02-28 03:10:52,687 - reporting.report_generator - INFO - Found interactive dashboard: ./data\season_2023\visualizations\qb_performance_dashboard.html
+2025-02-28 03:10:52,688 - __main__ - ERROR - Pipeline execution failed: "['player_name', 'team'] not in index"
+2025-02-28 03:12:11,787 - __main__ - INFO - Starting NFL QB analysis pipeline for 2023 season
+2025-02-28 03:12:11,787 - __main__ - INFO - Starting reporting step
+2025-02-28 03:12:11,788 - __main__ - INFO - Generating PDF report
+2025-02-28 03:12:11,788 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:12:11,788 - reporting.pdf_report - INFO - Initialized PDF report generator
+2025-02-28 03:12:11,792 - reporting.report_generator - INFO - Loaded QB metrics from ./data\season_2023\metrics\qb_composite_metrics.csv
+2025-02-28 03:12:11,792 - reporting.report_generator - INFO - Loaded correlation analysis report from ./data\season_2023\analysis\correlation_analysis_report.md
+2025-02-28 03:12:11,793 - reporting.report_generator - INFO - Found correlation heatmap: ./data\season_2023\analysis\correlation_heatmap.png
+2025-02-28 03:12:11,793 - reporting.report_generator - INFO - Found scatter plot: ./data\season_2023\analysis\scatter_qb_composite_score_vs_team_win_pct.png
+2025-02-28 03:12:11,793 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\depth_adjusted_comp_pct_distribution.png
+2025-02-28 03:12:11,793 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\passer_rating_distribution.png
+2025-02-28 03:12:11,793 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\pressure_performance_distribution.png
+2025-02-28 03:12:11,794 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\qb_composite_score_distribution.png
+2025-02-28 03:12:11,794 - reporting.report_generator - INFO - Found interactive dashboard: ./data\season_2023\visualizations\qb_performance_dashboard.html
+2025-02-28 03:12:11,794 - reporting.report_generator - INFO - Available columns in QB metrics: ['player_id', 'season', 'season_type', 'completions', 'attempts', 'passing_yards', 'passing_tds', 'interceptions', 'sacks', 'sack_yards', 'sack_fumbles', 'sack_fumbles_lost', 'passing_air_yards', 'passing_yards_after_catch', 'passing_first_downs', 'passing_epa', 'passing_2pt_conversions', 'pacr', 'dakota', 'carries', 'rushing_yards', 'rushing_tds', 'rushing_fumbles', 'rushing_fumbles_lost', 'rushing_first_downs', 'rushing_epa', 'rushing_2pt_conversions', 'receptions', 'targets', 'receiving_yards', 'receiving_tds', 'receiving_fumbles', 'receiving_fumbles_lost', 'receiving_air_yards', 'receiving_yards_after_catch', 'receiving_first_downs', 'receiving_epa', 'receiving_2pt_conversions', 'racr', 'target_share', 'air_yards_share', 'wopr_x', 'special_teams_tds', 'fantasy_points', 'fantasy_points_ppr', 'games', 'tgt_sh', 'ay_sh', 'yac_sh', 'wopr_y', 'ry_sh', 'rtd_sh', 'rfd_sh', 'rtdfd_sh', 'dom', 'w8dom', 'yptmpa', 'ppr_sh', 'position', 'team_abbr', 'behind_los_attempts', 'behind_los_completions', 'behind_los_yards', 'behind_los_tds', 'behind_los_ints', 'behind_los_comp_pct', 'short_attempts', 'short_completions', 'short_yards', 'short_tds', 'short_ints', 'short_comp_pct', 'medium_attempts', 'medium_completions', 'medium_yards', 'medium_tds', 'medium_ints', 'medium_comp_pct', 'deep_attempts', 'deep_completions', 'deep_yards', 'deep_tds', 'deep_ints', 'deep_comp_pct', 'pressure_rate', 'pressure_comp_pct', 'clean_comp_pct', 'pressure_comp_diff', 'wins', 'losses', 'ties', 'points_for', 'points_against', 'team_win_pct', 'depth_adjusted_comp_pct', 'pressure_performance', 'mobility_raw', 'mobility_contribution', 'yards_per_attempt', 'td_int_ratio', 'sack_avoidance', 'depth_adjusted_comp_pct_normalized', 'pressure_performance_normalized', 'mobility_contribution_normalized', 'yards_per_attempt_normalized', 'td_int_ratio_normalized', 'sack_avoidance_normalized', 'qb_composite_score', 'passer_rating', 'qbr', 'composite_rank']
+2025-02-28 03:12:12,681 - reporting.pdf_report - INFO - Generated PDF report at ./reports\season_2023\nfl_qb_analysis_2023_20250228_031212.pdf
+2025-02-28 03:12:12,682 - __main__ - INFO - PDF report generated at ./reports\season_2023\nfl_qb_analysis_2023_20250228_031212.pdf
+2025-02-28 03:12:12,682 - __main__ - INFO - Generating executive summary
+2025-02-28 03:12:12,683 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:12:12,683 - reporting.executive_summary - INFO - Initialized executive summary generator
+2025-02-28 03:12:12,693 - reporting.report_generator - INFO - Loaded QB metrics from ./data\season_2023\metrics\qb_composite_metrics.csv
+2025-02-28 03:12:12,695 - reporting.report_generator - INFO - Loaded correlation analysis report from ./data\season_2023\analysis\correlation_analysis_report.md
+2025-02-28 03:12:12,695 - reporting.report_generator - INFO - Found correlation heatmap: ./data\season_2023\analysis\correlation_heatmap.png
+2025-02-28 03:12:12,697 - reporting.report_generator - INFO - Found scatter plot: ./data\season_2023\analysis\scatter_qb_composite_score_vs_team_win_pct.png
+2025-02-28 03:12:12,698 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\depth_adjusted_comp_pct_distribution.png
+2025-02-28 03:12:12,699 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\passer_rating_distribution.png
+2025-02-28 03:12:12,699 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\pressure_performance_distribution.png
+2025-02-28 03:12:12,699 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\qb_composite_score_distribution.png
+2025-02-28 03:12:12,700 - reporting.report_generator - INFO - Found interactive dashboard: ./data\season_2023\visualizations\qb_performance_dashboard.html
+2025-02-28 03:12:12,700 - reporting.report_generator - INFO - Available columns in QB metrics: ['player_id', 'season', 'season_type', 'completions', 'attempts', 'passing_yards', 'passing_tds', 'interceptions', 'sacks', 'sack_yards', 'sack_fumbles', 'sack_fumbles_lost', 'passing_air_yards', 'passing_yards_after_catch', 'passing_first_downs', 'passing_epa', 'passing_2pt_conversions', 'pacr', 'dakota', 'carries', 'rushing_yards', 'rushing_tds', 'rushing_fumbles', 'rushing_fumbles_lost', 'rushing_first_downs', 'rushing_epa', 'rushing_2pt_conversions', 'receptions', 'targets', 'receiving_yards', 'receiving_tds', 'receiving_fumbles', 'receiving_fumbles_lost', 'receiving_air_yards', 'receiving_yards_after_catch', 'receiving_first_downs', 'receiving_epa', 'receiving_2pt_conversions', 'racr', 'target_share', 'air_yards_share', 'wopr_x', 'special_teams_tds', 'fantasy_points', 'fantasy_points_ppr', 'games', 'tgt_sh', 'ay_sh', 'yac_sh', 'wopr_y', 'ry_sh', 'rtd_sh', 'rfd_sh', 'rtdfd_sh', 'dom', 'w8dom', 'yptmpa', 'ppr_sh', 'position', 'team_abbr', 'behind_los_attempts', 'behind_los_completions', 'behind_los_yards', 'behind_los_tds', 'behind_los_ints', 'behind_los_comp_pct', 'short_attempts', 'short_completions', 'short_yards', 'short_tds', 'short_ints', 'short_comp_pct', 'medium_attempts', 'medium_completions', 'medium_yards', 'medium_tds', 'medium_ints', 'medium_comp_pct', 'deep_attempts', 'deep_completions', 'deep_yards', 'deep_tds', 'deep_ints', 'deep_comp_pct', 'pressure_rate', 'pressure_comp_pct', 'clean_comp_pct', 'pressure_comp_diff', 'wins', 'losses', 'ties', 'points_for', 'points_against', 'team_win_pct', 'depth_adjusted_comp_pct', 'pressure_performance', 'mobility_raw', 'mobility_contribution', 'yards_per_attempt', 'td_int_ratio', 'sack_avoidance', 'depth_adjusted_comp_pct_normalized', 'pressure_performance_normalized', 'mobility_contribution_normalized', 'yards_per_attempt_normalized', 'td_int_ratio_normalized', 'sack_avoidance_normalized', 'qb_composite_score', 'passer_rating', 'qbr', 'composite_rank']
+2025-02-28 03:12:12,706 - reporting.executive_summary - INFO - Generated executive summary at ./reports\season_2023\executive_summary_2023_20250228_031212.txt
+2025-02-28 03:12:12,707 - __main__ - INFO - Executive summary generated at ./reports\season_2023\executive_summary_2023_20250228_031212.txt
+2025-02-28 03:12:12,707 - __main__ - INFO - Generating interactive dashboard
+2025-02-28 03:12:12,708 - reporting.report_generator - INFO - Initialized report generator with data directory: ./data and output directory: ./reports
+2025-02-28 03:12:12,708 - reporting.interactive_dashboard - INFO - Initialized interactive dashboard generator
+2025-02-28 03:12:12,716 - reporting.report_generator - INFO - Loaded QB metrics from ./data\season_2023\metrics\qb_composite_metrics.csv
+2025-02-28 03:12:12,717 - reporting.report_generator - INFO - Loaded correlation analysis report from ./data\season_2023\analysis\correlation_analysis_report.md
+2025-02-28 03:12:12,718 - reporting.report_generator - INFO - Found correlation heatmap: ./data\season_2023\analysis\correlation_heatmap.png
+2025-02-28 03:12:12,719 - reporting.report_generator - INFO - Found scatter plot: ./data\season_2023\analysis\scatter_qb_composite_score_vs_team_win_pct.png
+2025-02-28 03:12:12,719 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\depth_adjusted_comp_pct_distribution.png
+2025-02-28 03:12:12,719 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\passer_rating_distribution.png
+2025-02-28 03:12:12,720 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\pressure_performance_distribution.png
+2025-02-28 03:12:12,720 - reporting.report_generator - INFO - Found distribution plot: ./data\season_2023\visualizations\qb_composite_score_distribution.png
+2025-02-28 03:12:12,720 - reporting.report_generator - INFO - Found interactive dashboard: ./data\season_2023\visualizations\qb_performance_dashboard.html
+2025-02-28 03:12:12,735 - reporting.interactive_dashboard - INFO - Generated interactive dashboard at ./reports\season_2023\dashboard_20250228_031212
+2025-02-28 03:12:12,736 - reporting.interactive_dashboard - INFO - To run the dashboard, execute: python ./reports\season_2023\dashboard_20250228_031212\run_dashboard.py
+2025-02-28 03:12:12,736 - __main__ - INFO - Interactive dashboard generated at ./reports\season_2023\dashboard_20250228_031212
+2025-02-28 03:12:12,736 - __main__ - INFO - Reporting step completed successfully
+2025-02-28 03:12:12,737 - __main__ - INFO - Pipeline completed successfully in 0:00:00.949474
+2025-02-28 10:21:19,422 - __main__ - INFO - Starting NFL QB analysis pipeline for 2023 season
+2025-02-28 10:21:19,423 - __main__ - INFO - Starting data collection step
+2025-02-28 10:21:19,423 - data_collection.data_fetcher - INFO - Initialized NFL data fetcher with data directory: ./data
+2025-02-28 10:21:19,423 - data_collection.data_fetcher - INFO - Fetching comprehensive QB data for season 2023
+2025-02-28 10:21:19,423 - data_collection.data_fetcher - INFO - Fetching play-by-play data for seasons: [2023]
+2025-02-28 10:21:40,578 - data_collection.data_fetcher - INFO - Successfully fetched 49665 play-by-play records
+2025-02-28 10:21:40,578 - data_collection.data_fetcher - INFO - Fetching player stats for seasons: [2023]
+2025-02-28 10:21:42,484 - data_collection.data_fetcher - INFO - Successfully fetched stats for 588 player records
+2025-02-28 10:21:42,484 - data_collection.data_fetcher - INFO - Fetching player information
+2025-02-28 10:21:44,839 - data_collection.data_fetcher - INFO - Successfully fetched info for 20754 players
+2025-02-28 10:21:44,840 - data_collection.data_fetcher - INFO - Fetching team information
+2025-02-28 10:21:46,744 - data_collection.data_fetcher - INFO - Successfully fetched info for 36 teams
+2025-02-28 10:21:46,744 - data_collection.data_fetcher - INFO - Fetching team records for seasons: [2023]
+2025-02-28 10:21:49,674 - data_collection.data_fetcher - INFO - Added team records from 1 seasons
+2025-02-28 10:21:49,674 - data_collection.data_fetcher - INFO - Fetching weekly player stats for seasons: [2023]
+2025-02-28 10:21:51,491 - data_collection.data_fetcher - INFO - Successfully fetched 5653 weekly stat records
+2025-02-28 10:21:51,492 - data_collection.data_fetcher - INFO - Fetching Next Gen Stats for seasons: [2023]
+2025-02-28 10:21:51,492 - data_collection.data_fetcher - ERROR - Error fetching Next Gen Stats: import_ngs_data() got multiple values for argument 'stat_type'
+2025-02-28 10:21:51,492 - data_collection.data_fetcher - WARNING - Couldn't fetch NGS data: import_ngs_data() got multiple values for argument 'stat_type', continuing without it
+2025-02-28 10:21:56,802 - data_collection.data_fetcher - INFO - Saved play_by_play data to ./data\season_2023\raw\play_by_play.csv
+2025-02-28 10:21:56,815 - data_collection.data_fetcher - INFO - Saved player_stats data to ./data\season_2023\raw\player_stats.csv
+2025-02-28 10:21:56,970 - data_collection.data_fetcher - INFO - Saved player_info data to ./data\season_2023\raw\player_info.csv
+2025-02-28 10:21:56,971 - data_collection.data_fetcher - INFO - Saved team_info data to ./data\season_2023\raw\team_info.csv
+2025-02-28 10:21:57,044 - data_collection.data_fetcher - INFO - Saved weekly_stats data to ./data\season_2023\raw\weekly_stats.csv
+2025-02-28 10:21:57,045 - __main__ - INFO - Data collection completed successfully
+2025-02-28 10:21:57,045 - __main__ - INFO - Starting data processing step
+2025-02-28 10:21:57,046 - data_processing.data_processor - INFO - Initialized NFL data processor with data directory: ./data
+2025-02-28 10:21:57,046 - data_processing.data_processor - INFO - Processing QB data from: 49665 play-by-play records, 588 player stat records, 20754 player info records, 36 team records
+2025-02-28 10:21:57,047 - data_processing.data_processor - INFO - Merging player stats with player info to get position data
+2025-02-28 10:21:57,047 - data_processing.data_processor - INFO - Player stats columns: ['player_id', 'season', 'season_type', 'completions', 'attempts', 'passing_yards', 'passing_tds', 'interceptions', 'sacks', 'sack_yards']...
+2025-02-28 10:21:57,048 - data_processing.data_processor - INFO - Player info columns: ['birth_date', 'college_conference', 'college_name', 'current_team_id', 'display_name', 'draft_club', 'draft_number', 'draftround', 'entry_year', 'esb_id']...
+2025-02-28 10:21:57,048 - data_processing.data_processor - INFO - Player stats sample IDs: ['00-0023459', '00-0024243', '00-0026158']
+2025-02-28 10:21:57,048 - data_processing.data_processor - INFO - Using player_id to gsis_id mapping
+2025-02-28 10:21:57,065 - data_processing.data_processor - INFO - After merge: 588 records, position nulls: 0
+2025-02-28 10:21:57,067 - data_processing.data_processor - INFO - Filtered data to 48 QBs with at least 100 passing attempts
+2025-02-28 10:21:57,164 - data_processing.data_processor - INFO - PBP columns related to pressure: ['qb_hit', 'sack', 'lateral_sack_player_id', 'lateral_sack_player_name', 'qb_hit_1_player_id', 'qb_hit_1_player_name', 'qb_hit_2_player_id', 'qb_hit_2_player_name', 'sack_player_id', 'sack_player_name', 'half_sack_1_player_id', 'half_sack_1_player_name', 'half_sack_2_player_id', 'half_sack_2_player_name', 'was_pressure']
+2025-02-28 10:21:57,165 - data_processing.data_processor - INFO - Using 'qb_hit' for pressure detection
+2025-02-28 10:21:57,166 - data_processing.data_processor - INFO - Using 'sack' for pressure detection
+2025-02-28 10:21:57,166 - data_processing.data_processor - INFO - Created 'under_pressure' field using 2 indicators
+2025-02-28 10:21:57,167 - data_processing.data_processor - INFO - Prepared 20723 pass plays for QB analysis
+2025-02-28 10:21:57,167 - data_processing.data_processor - INFO - Adding team information from player_info
+2025-02-28 10:21:57,175 - data_processing.data_processor - INFO - Added team information to 48 QB records
+2025-02-28 10:21:57,175 - data_processing.data_processor - INFO - Calculating advanced QB metrics from play-by-play data
+2025-02-28 10:21:57,753 - data_processing.data_processor - INFO - Enhanced QB stats with depth-based and pressure metrics for 48 QBs
+2025-02-28 10:21:57,755 - data_processing.data_processor - INFO - QB stats already contains a team identifier column
+2025-02-28 10:21:57,756 - data_processing.data_processor - INFO - Team mapping sample: [{'team_abbr': 'ARI', 'wins': 4.0, 'losses': 13.0, 'ties': 0.0, 'points_for': 330.0, 'points_against': 455.0}, {'team_abbr': 'ATL', 'wins': 7.0, 'losses': 10.0, 'ties': 0.0, 'points_for': 321.0, 'points_against': 373.0}, {'team_abbr': 'BAL', 'wins': 13.0, 'losses': 4.0, 'ties': 0.0, 'points_for': 483.0, 'points_against': 280.0}, {'team_abbr': 'BUF', 'wins': 11.0, 'losses': 6.0, 'ties': 0.0, 'points_for': 451.0, 'points_against': 311.0}, {'team_abbr': 'CAR', 'wins': 2.0, 'losses': 15.0, 'ties': 0.0, 'points_for': 236.0, 'points_against': 416.0}]
+2025-02-28 10:21:57,757 - data_processing.data_processor - WARNING - QB stats missing 'recent_team' column, trying to use 'team' or 'team_abbr' instead
+2025-02-28 10:21:57,757 - data_processing.data_processor - INFO - Using 'team_abbr' column instead of 'recent_team'
+2025-02-28 10:21:57,757 - data_processing.data_processor - INFO - QB teams: {'TEN': 3, 'SEA': 3, 'CLE': 3, 'LAC': 3, 'LV': 3, 'SF': 2, 'MIN': 2, 'LA': 2, 'PHI': 2, 'BUF': 2, 'CIN': 2, 'JAX': 2, 'PIT': 2, 'CHI': 1, 'NYG': 1, 'CAR': 1, 'GB': 1, 'MIA': 1, 'DEN': 1, 'IND': 1, 'ARI': 1, 'TB': 1, 'BAL': 1, 'KC': 1, 'DET': 1, 'DAL': 1, 'NO': 1, 'ATL': 1, 'NYJ': 1, 'HOU': 1}
+2025-02-28 10:21:57,759 - data_processing.data_processor - INFO - Added team context to 48 QB records
+2025-02-28 10:21:57,760 - data_processing.data_processor - INFO - Handling 0 missing values across 94 columns
+2025-02-28 10:21:57,773 - data_processing.data_processor - INFO - Reduced missing values from 0 to 0
+2025-02-28 10:21:57,777 - data_processing.data_processor - INFO - Saved processed data to ./data\season_2023\processed\qb_analysis_data.csv
+2025-02-28 10:22:00,089 - data_processing.data_processor - INFO - Saved processed data to ./data\season_2023\processed\prepared_pbp_data.csv
+2025-02-28 10:22:00,089 - data_processing.data_processor - INFO - Successfully processed QB data with 48 records
+2025-02-28 10:22:00,099 - __main__ - INFO - Data processing completed successfully
+2025-02-28 10:22:00,099 - __main__ - INFO - Starting metric development step
+2025-02-28 10:22:00,099 - metric_development.qb_metric - INFO - Initialized QB metric developer with data directory: ./data
+2025-02-28 10:22:00,104 - metric_development.qb_metric - INFO - Calculated depth-adjusted accuracy for all QBs
+2025-02-28 10:22:00,108 - metric_development.qb_metric - INFO - Calculated pressure performance metric for all QBs
+2025-02-28 10:22:00,112 - metric_development.qb_metric - INFO - Calculated mobility contribution metric for all QBs
+2025-02-28 10:22:00,114 - metric_development.qb_metric - INFO - Calculated efficiency metrics for all QBs
+2025-02-28 10:22:00,117 - metric_development.qb_metric - INFO - Normalized 6 metric components
+2025-02-28 10:22:00,118 - metric_development.qb_metric - INFO - Calculated composite QB performance metric for all QBs
+2025-02-28 10:22:00,119 - metric_development.qb_metric - INFO - Compared custom QB metric with traditional rating systems
+2025-02-28 10:22:00,119 - metric_development.qb_metric - INFO - Identified 0 overrated and 0 underrated QBs
+2025-02-28 10:22:00,122 - metric_development.qb_metric - INFO - Saved QB metric results to ./data\season_2023\metrics\qb_composite_metrics.csv
+2025-02-28 10:22:00,123 - metric_development.qb_metric - INFO - Successfully developed and calculated QB performance metric
+2025-02-28 10:22:00,123 - __main__ - INFO - Metric development completed successfully
+2025-02-28 10:22:00,123 - __main__ - INFO - Starting correlation analysis step
+2025-02-28 10:22:00,123 - analysis.correlation_analysis - INFO - Initialized QB correlation analyzer with data directory: ./data
+2025-02-28 10:22:00,124 - analysis.correlation_analysis - INFO - Created analysis directory: ./data\season_2023\analysis
+2025-02-28 10:22:00,125 - analysis.correlation_analysis - INFO - Available numeric columns: ['qb_composite_score', 'passer_rating', 'qbr', 'team_win_pct', 'wins', 'points_for']
+2025-02-28 10:22:00,125 - analysis.correlation_analysis - INFO - Column data types before conversion: {'qb_composite_score': dtype('float64'), 'passer_rating': dtype('float64'), 'qbr': dtype('float64'), 'team_win_pct': dtype('float64'), 'wins': dtype('float64'), 'points_for': dtype('float64')}
+2025-02-28 10:22:00,127 - analysis.correlation_analysis - INFO - Column data types after conversion: {'qb_composite_score': dtype('float64'), 'passer_rating': dtype('float64'), 'qbr': dtype('float64'), 'team_win_pct': dtype('float64'), 'wins': dtype('float64'), 'points_for': dtype('float64')}
+2025-02-28 10:22:00,134 - analysis.correlation_analysis - INFO - Calculated correlations between QB metrics and team success
+2025-02-28 10:22:00,470 - analysis.correlation_analysis - INFO - Created correlation heatmap and saved to ./data\season_2023\analysis\correlation_heatmap.png
+2025-02-28 10:22:01,002 - analysis.correlation_analysis - INFO - Created scatter plot and saved to ./data\season_2023\analysis\scatter_qb_composite_score_vs_team_win_pct.png
+2025-02-28 10:22:01,004 - analysis.correlation_analysis - INFO - Analyzed differences between custom metric and traditional metrics
+2025-02-28 10:22:01,010 - analysis.correlation_analysis - INFO - Generated summary report at ./data\season_2023\analysis\correlation_analysis_report.md
+2025-02-28 10:22:01,010 - analysis.correlation_analysis - INFO - Successfully completed correlation analysis
+2025-02-28 10:22:01,012 - __main__ - INFO - Correlation analysis completed successfully
+2025-02-28 10:22:01,012 - __main__ - INFO - Starting visualization step
+2025-02-28 10:22:01,012 - visualization.visualizer - INFO - Initialized QB visualizer with data directory: ./data
+2025-02-28 10:22:01,012 - visualization.visualizer - INFO - Created visualization directory: ./data\season_2023\visualizations
+2025-02-28 10:22:01,012 - visualization.visualizer - WARNING - Required columns not found for top QBs bar chart
+2025-02-28 10:22:02,054 - visualization.visualizer - INFO - Created metric correlation matrix and saved to ./data\season_2023\visualizations\metric_correlation_matrix.png
+2025-02-28 10:22:02,359 - visualization.visualizer - INFO - Created distribution plot for qb_composite_score and saved to ./data\season_2023\visualizations\qb_composite_score_distribution.png
+2025-02-28 10:22:02,615 - visualization.visualizer - INFO - Created distribution plot for passer_rating and saved to ./data\season_2023\visualizations\passer_rating_distribution.png
+2025-02-28 10:22:02,914 - visualization.visualizer - INFO - Created distribution plot for depth_adjusted_comp_pct and saved to ./data\season_2023\visualizations\depth_adjusted_comp_pct_distribution.png
+2025-02-28 10:22:03,216 - visualization.visualizer - INFO - Created distribution plot for pressure_performance and saved to ./data\season_2023\visualizations\pressure_performance_distribution.png
+2025-02-28 10:22:03,217 - visualization.visualizer - WARNING - Required columns not found for metric vs wins scatter plots
+2025-02-28 10:22:03,217 - visualization.visualizer - INFO - Created player_name column for dashboard
+2025-02-28 10:22:03,393 - visualization.visualizer - INFO - Created interactive dashboard and saved to ./data\season_2023\visualizations\qb_performance_dashboard.html
+2025-02-28 10:22:03,394 - visualization.visualizer - INFO - Successfully created all visualizations
+2025-02-28 10:22:03,394 - __main__ - INFO - Visualization completed successfully
+2025-02-28 10:22:03,394 - __main__ - INFO - Starting reporting step
+2025-02-28 10:22:03,395 - reporting.report_generator - INFO - Initialized QB report generator with data directory: ./data
+2025-02-28 10:22:03,395 - reporting.report_generator - INFO - Generating QB analysis report for season 2023
+2025-02-28 10:22:03,396 - reporting.report_generator - INFO - Loading data for season 2023
+2025-02-28 10:22:05,767 - reporting.report_generator - INFO - Report generated and saved to ./data\reports\nfl_qb_analysis_report_2023_20250228_102205.pdf
+2025-02-28 10:22:05,767 - __main__ - INFO - Reporting completed successfully, report saved to ./data\reports\nfl_qb_analysis_report_2023_20250228_102205.pdf
+2025-02-28 10:22:05,767 - __main__ - INFO - Pipeline completed successfully in 0:00:46.344705

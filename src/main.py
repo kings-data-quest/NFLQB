@@ -34,6 +34,7 @@ from data_processing.data_processor import NFLDataProcessor
 from metric_development.qb_metric import QBMetricDeveloper
 from analysis.correlation_analysis import QBCorrelationAnalyzer
 from visualization.visualizer import QBVisualizer
+from reporting.report_generator import QBReportGenerator
 
 
 def parse_arguments():
@@ -47,7 +48,7 @@ def parse_arguments():
                         help='Directory for data storage (default: ./data)')
     
     parser.add_argument('--steps', type=str, nargs='+',
-                        choices=['collect', 'process', 'metric', 'analyze', 'visualize', 'all'],
+                        choices=['collect', 'process', 'metric', 'analyze', 'visualize', 'report', 'all'],
                         default=['all'],
                         help='Pipeline steps to run (default: all)')
     
@@ -243,6 +244,42 @@ def run_visualization(data_dir: str, season: int, qb_metrics: Optional[Dict] = N
         raise
 
 
+def run_reporting(data_dir: str, season: int, skip_existing: bool = False) -> str:
+    """
+    Run the reporting step of the pipeline.
+    
+    Args:
+        data_dir: Directory for data storage
+        season: NFL season year
+        skip_existing: Skip if output files already exist
+        
+    Returns:
+        Path to the generated report
+    """
+    logger.info("Starting reporting step")
+    
+    # Check if output files already exist
+    reports_dir = os.path.join(data_dir, 'reports')
+    
+    if skip_existing and os.path.exists(reports_dir) and len(os.listdir(reports_dir)) > 0:
+        report_files = [f for f in os.listdir(reports_dir) if f.startswith(f'nfl_qb_analysis_report_{season}')]
+        if report_files:
+            logger.info(f"Report files already exist in {reports_dir}, skipping reporting")
+            return os.path.join(reports_dir, report_files[0])
+    
+    # Initialize report generator
+    report_generator = QBReportGenerator(data_dir=data_dir)
+    
+    try:
+        # Generate report
+        report_path = report_generator.generate_report(season=season)
+        logger.info(f"Reporting completed successfully, report saved to {report_path}")
+        return report_path
+    except Exception as e:
+        logger.error(f"Error in reporting: {str(e)}")
+        raise
+
+
 def run_pipeline(args):
     """
     Run the complete NFL QB analysis pipeline based on provided arguments.
@@ -263,13 +300,15 @@ def run_pipeline(args):
         'process': run_all or 'process' in args.steps,
         'metric': run_all or 'metric' in args.steps,
         'analyze': run_all or 'analyze' in args.steps,
-        'visualize': run_all or 'visualize' in args.steps
+        'visualize': run_all or 'visualize' in args.steps,
+        'report': run_all or 'report' in args.steps
     }
     
     # Run pipeline steps
     raw_data = None
     processed_data = None
     qb_metrics = None
+    report_path = None
     
     try:
         # Step 1: Data Collection
@@ -292,6 +331,10 @@ def run_pipeline(args):
         if steps_to_run['visualize']:
             run_visualization(args.data_dir, args.season, qb_metrics, args.skip_existing)
         
+        # Step 6: Reporting
+        if steps_to_run['report']:
+            report_path = run_reporting(args.data_dir, args.season, args.skip_existing)
+        
         # Calculate and log execution time
         end_time = datetime.now()
         execution_time = end_time - start_time
@@ -299,6 +342,8 @@ def run_pipeline(args):
         
         print("\nNFL QB Analysis Pipeline completed successfully!")
         print(f"Results are available in: {args.data_dir}/season_{args.season}/")
+        if report_path:
+            print(f"PDF Report is available at: {report_path}")
         
     except Exception as e:
         logger.error(f"Pipeline execution failed: {str(e)}")
@@ -311,4 +356,4 @@ if __name__ == "__main__":
     args = parse_arguments()
     
     # Run the pipeline
-    run_pipeline(args) 
+    run_pipeline(args)
