@@ -1,0 +1,5 @@
+venv311/
+__pycache__/
+
+# Ignore all CSV files (large data files)
+*.csv
